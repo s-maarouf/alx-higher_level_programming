@@ -9,7 +9,9 @@ class Square:
     def __init__(self, size=0, position=(0, 0)):
         """Initialize a new square
 
-        Args: size of square"""
+        Args:
+               size = size of square
+               position = position of square"""
         self.__size = size
         self.__position = position
 
