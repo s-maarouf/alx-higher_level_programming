@@ -10,8 +10,8 @@ class Square:
         """Initialize a new square
 
         Args:
-               size = size of square
-               position = position of square"""
+            size = size of square
+            position = position of square"""
         self.__size = size
         self.__position = position
 
