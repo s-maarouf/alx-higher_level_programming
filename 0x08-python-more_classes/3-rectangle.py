@@ -63,7 +63,3 @@ class Rectangle:
         for _ in range(self.__height):
             result += "#" * self.__width + "\n"
         return result
-
-    def __repr__(self):
-        """Returns a string representation of the rectangle"""
-        return f"Rectangle(width={self.__width}, height={self.__height})"
