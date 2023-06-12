@@ -4,14 +4,8 @@
 
 
 class MyList(list):
-
-    def __init__(self):
-        """initializes the object"""
-        super().__init__()
+    """Implements sorted printing for the built-in list class."""
 
     def print_sorted(self):
-
         """Prints sorted list"""
-
-        sorted_list = sorted(self)
-        print(sorted_list)
+        print(sorted(self))
