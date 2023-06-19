@@ -4,6 +4,7 @@
 
 from models.base import Base
 
+
 class Rectangle(Base):
 
     """Initialise rectangle"""
@@ -77,3 +78,13 @@ class Rectangle(Base):
     def area(self):
         """returns rectangle's area"""
         return (self.__width * self.__height)
+
+    def display(self):
+        """Display the Rectangle instance with '#' character"""
+        if self.__width == 0 or self.__height == 0:
+            print()
+
+        for h in range(self.height):
+            [print(" ", end="") for x in range(self.x)]
+            [print("#", end="") for w in range(self.width)]
+            print("")
