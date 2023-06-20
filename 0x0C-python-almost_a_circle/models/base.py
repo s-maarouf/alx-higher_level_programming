@@ -4,6 +4,7 @@
 
 
 import json
+import turtle
 
 
 class Base:
@@ -68,7 +69,9 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
+        
         """returns a list of instances from a file"""
+
         filename = cls.__name__ + ".json"
         instances = []
         try:
