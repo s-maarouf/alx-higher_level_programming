@@ -16,7 +16,9 @@ class Square(Rectangle):
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
+        
         """Return the print() and str() representation of a Square."""
+        
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
                                                  self.width)
 
@@ -31,7 +33,9 @@ class Square(Rectangle):
         self.height = value
 
     def update(self, *args, **kwargs):
+        
         """Update attributes with provided arguments"""
+        
         if args:
             if len(args) >= 1:
                 self.id = args[0]
@@ -46,7 +50,9 @@ class Square(Rectangle):
                 setattr(self, key, value)
 
     def to_dictionary(self):
+
         """Return the dictionary representation of a Square"""
+        
         return {
             "id": self.id,
             "size": self.width,
