@@ -80,7 +80,9 @@ class Rectangle(Base):
         return (self.__width * self.__height)
 
     def display(self):
+        
         """Display the Rectangle instance with '#' character"""
+        
         for _ in range(self.y):
             print()
         for _ in range(self.height):
@@ -92,7 +94,9 @@ class Rectangle(Base):
             f"{self.width}/{self.height}"
 
     def update(self, *args, **kwargs):
+
         """assigns an argument to each attribute"""
+        
         if args:
             if len(args) >= 1:
                 self.id = args[0]
@@ -109,7 +113,9 @@ class Rectangle(Base):
                 setattr(self, key, value)
 
     def to_dictionary(self):
+        
         """Return the dictionary representation of a Rectangle"""
+        
         return {
             "id": self.id,
             "width": self.width,
