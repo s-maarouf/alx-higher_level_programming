@@ -79,3 +79,41 @@ class Base:
         except FileNotFoundError:
             pass
         return instances
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+
+        """opens a window and draws all the Rectangles
+        and Squares using turtle GUI"""
+
+        screen = turtle.Screen()
+        screen.bgcolor("white")
+        screen.title("Rectangles and Squares")
+
+        pen = turtle.Turtle()
+        pen.speed(0)
+        pen.width(2)
+        pen.color("#E7CEA6")
+
+        for rectangle in list_rectangles:
+            pen.penup()
+            pen.goto(rectangle.x, rectangle.y)
+            pen.pendown()
+            pen.forward(rectangle.width)
+            pen.left(90)
+            pen.forward(rectangle.height)
+            pen.left(90)
+            pen.forward(rectangle.width)
+            pen.left(90)
+            pen.forward(rectangle.height)
+            pen.left(90)
+
+        for square in list_squares:
+            pen.penup()
+            pen.goto(square.x, square.y)
+            pen.pendown()
+            for _ in range(4):
+                pen.forward(square.width)
+                pen.left(90)
+
+        turtle.done()
