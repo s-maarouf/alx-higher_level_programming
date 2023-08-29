@@ -1,5 +1,7 @@
 # 0x0A. Python - Inheritance
 
+## Tasks
+
 ### 0) [Lookup](https://github.com/s-maarouf/alx-higher_level_programming/blob/master/0x0A-python-inheritance/0-lookup.py)
 
 Write a function that returns the list of available attributes and methods of an object:
