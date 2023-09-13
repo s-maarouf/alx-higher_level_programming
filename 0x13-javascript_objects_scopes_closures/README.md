@@ -172,8 +172,6 @@ guillaume@ubuntu:~/0x13$
 
 ### 4. [Rectangle #4](./4-rectangle.js)
 
-[...
-
 Write a class `Rectangle` that defines a rectangle:
 
 - You must use the `class` notation for defining your class
