@@ -20,8 +20,8 @@ if __name__ == "__main__":
     states = session.query(State).order_by(State.id)
     cities = session.query(City).order_by(City.id)
 
-    for state in states:
-        print("{}: {}".format(state.id, state.name))
-        for city in cities:
-            if city.state_id == state.id:
-                print("    {}: {}".format(city.id, city.name))
+    for instance in session.query(State).order_by(State.id):
+        print(instance.id, instance.name, sep=": ")
+        for city_ins in instance.cities:
+            print("    ", end="")
+            print(city_ins.id, city_ins.name, sep=": ")
