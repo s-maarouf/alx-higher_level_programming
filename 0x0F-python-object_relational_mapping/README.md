@@ -14,8 +14,8 @@ source venv/bin/activate
 
 ### Install MySQLdb module version 2.0.x
 
-```sh
 For installing `MySQLdb`, you need to have `MySQL` installed.
+```sh
 $ sudo apt-get install python3-dev
 $ sudo apt-get install libmysqlclient-dev
 $ sudo apt-get install zlib1g-dev
